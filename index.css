@@ -1,0 +1,777 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Edu+SA+Beginner:wght@600&family=Roboto:wght@500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Edu+SA+Beginner:wght@600&family=Roboto+Slab:wght@500&family=Roboto:wght@500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Edu+SA+Beginner:wght@600&family=Roboto+Condensed&family=Roboto+Slab:wght@500&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&family=Edu+SA+Beginner:wght@600&family=Roboto+Condensed:wght@400;700&family=Roboto:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Main{
+    width: 100%;
+    position: relative;
+}
+.Header{
+    height: 80px;
+    display: flex;
+    background:-webkit-linear-gradient(left, rgb(79,204,255),rgb(79,204,255),rgb(242, 243, 243),rgb(242, 243, 243), rgb(242, 243, 243),rgb(253, 253, 253),#fdfdfd,#fefefe)
+}
+.logo{
+    width: 20%;
+    height: 100%;
+    padding:12px 0 10px 45px !important;
+    /* background-color: black; */
+}
+img{
+    width:200px;
+    height: 50px;
+}
+.Search{
+    width: 25% !important;
+    position: absolute;
+    top: 30px;
+    right:25px;
+    /* background-color: blue; */
+}
+.Sign-up{
+    display: none;
+    z-index: 1;
+    position: fixed;
+}
+.blur{
+    height:755px;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+    top: 0;
+    position: absolute;
+    position: fixed;
+    /* /* position: relative; */
+}
+.Sign{
+    width: 400px;
+    height: 350px;
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    left: 565px;
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.Sign .Title h3{
+    font-family: 'roboto';
+    text-decoration: underline;
+   text-align: center;
+    margin-top: 10px;
+}
+.Sign .log-in{
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 95px;
+}
+.nav{
+    width: 30% !important;
+    height: 50px;
+    margin-top: 20px !important;
+    margin-left: 280px;
+    /* background-color: red; */
+    box-shadow: 0px 2px 0px black;
+    /* position: relative; */
+    display: flex;
+}
+.nav ul{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.nav ul li{
+    list-style: none;
+    padding: 5px 45px 0px 5px;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: BLACK;
+    font-size: larger;
+    font-family: 'Roboto' ;
+}
+.nav ul li a:hover{
+    text-decoration: underline;
+    font-family: 'Roboto' ;
+}
+/* .nav ul li a:hover{
+    text-decoration: underline;
+    color: aqua;
+    transition: 0.9ms;
+} */
+
+
+
+
+/* Body */
+.body{
+    width: 100%;
+    /* background-color: red; */
+}
+.courosel{
+    width: 90% !important;
+    height: 500px;
+    /* background-color: black; */
+    margin: 20px auto !important;
+}
+.courosel .carousel-inner .carousel-item img{
+    width: 100% !important;
+    height: 500px;
+    border-radius: 30px;
+}
+.product{
+    width:80% !important;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.product .left{
+    width: 70%;
+    /* background-color: whitesmoke; */
+    height: 100%;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    border-radius: 30px;
+}
+.right{
+    width: 28%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.right img{
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 30px;
+}
+.left .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: aqua; */
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 550px;
+    font-family: 'Roboto Slab', serif;
+    border-bottom: 2px solid gray;
+    /* border-radius: 30px; */
+}
+.left .title p{
+    font-size: 36px;
+
+}
+.left .title i{
+    font-size: 33px;
+    margin-top: 10px;
+}
+.left .brand{
+    width: 100%;
+    height: 10%;
+    /* background-color: blue; */
+    display: flex;
+    border-bottom: 2px solid gray;
+    border-radius: 30px;
+}
+.left .brand .title1{
+    width: 30%;
+    height: 100%;
+    /* background-color: white; */
+    padding-left: 100px;
+    padding-top: 15px;
+    /* border-right: 2px solid gray; */
+    border-radius: 30px;
+    
+}
+.left .brand p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+}
+.left .brand .shoes{
+    width: 70%;
+    height: 100%;
+    /* background-color: green; */
+    padding-top: 9px;
+    /* border-bottom: 2px solid black; */
+    border-radius: 30px;
+}
+.left .brand .shoes ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+.left .brand .shoes ul a{
+    color: black;
+    /* text-decoration: none; */
+    font-size: 18px;
+}
+.left .brand .shoes ul a img{
+    width: 100px;
+    height: 45px;
+}
+.Model-color{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    /* background-color: darkviolet; */
+    border-radius: 30px;
+    
+}
+.left .Model-color .model{
+    width: 25%;
+    height: 88%;
+    border-right: 2px solid gray;
+    /* background-color: green; */
+    /* border-right: 2px inset black; */
+    border-radius: 30px;
+}
+.left .model .title2{
+    width: 100%;
+    height: 13%;
+    /* background-color: darkmagenta; */
+    padding: 15px 0px 0px 100px;
+    /* box-shadow: 0px 1.65px 0px 0px black; */
+    border-radius: 30px;
+}
+.left .model p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    
+}
+.Model-color .model .name{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    border-radius: 30px;
+}
+.Model-color .left .model .name ul{
+    display: flex;
+	flex-direction: column; 
+    justify-content: space-between;
+    /* padding-left: 60px; */
+}
+.name ul li{
+    margin-bottom: 10px;
+    display: block;
+    padding: 10px 0px 5px 40px;
+}
+.name ul li a{
+    font-family: 'Roboto Slab', serif;
+    font-size: 17px;
+    /* text-decoration:none; */
+    color: black;
+}
+.name ul li input{
+    padding: 0;
+    border: none;
+    background: none;
+    font-size:17px ;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#NDL{
+    color: rgb(79,204,255);
+}
+#AJRI {
+    display: none;
+}
+#NKFI{
+    display: none;
+}
+#Nike-l{
+    border: 2px solid black;
+    border-radius: 50px;
+}
+.Shoes{
+    width: 75%;
+    height: 100%;
+    /* background-color: darkgreen; */
+    border-radius: 30px;
+}
+.Shoes .picture{
+    width: 100%;
+    height: 70%;
+    /* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */
+    /* background-color: deeppink; */
+    border-radius: 30px;
+    position: relative;
+}
+.Shoes .color{
+    width: 100%;
+    height: 15%;
+    /* background-color: rgb(255, 20, 20); */
+    display: flex;
+    padding: 5px 260px;
+    border-radius: 30px;
+}
+.Shoes .picture img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain;
+    overflow: hidden;
+    position: absolute;
+}
+.Shoes .color input{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin: auto;
+}
+/* Nike */
+
+.NIKE{
+    width:80% !important;
+    height: 600px;
+    /* background-color: blue; */
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.NIKE .left{
+    width: 28%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.NIKE .right{
+    width: 70%;
+    /* background-color: orange; */
+    height: 100%;
+}
+.NIKE .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 50px;
+}
+.NIKE .right .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: chocolate; */
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+.NIKE .right .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.NIKE .right .item{
+    width: 100%;
+    height: 90%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.NIKE .right .item .box{
+    width: 23%;
+    height: 48%;
+    /* background-color: cyan; */
+    border: 0.5px solid rgb(227, 222, 222) ;
+    border-radius: 30px;
+}
+.NIKE .right .item .box .pic{
+    width: 100%;
+    height: 45%;
+    /* background-color: darkorchid; */
+}
+.NIKE .right .item .box .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+.NIKE .right .item .box .des{
+    width: 100%;
+    height: 55%;
+    /* background-color: deeppink; */
+    padding-left: 10px;
+}
+.NIKE .right .item .box .des .name{
+    width: 100%;
+    height: 45%;
+    /* background-color: deepskyblue; */
+}
+.NIKE .right .item .box .des .price{
+    width: 100%;
+    height: 35%;
+    /* background-color: gold; */
+}
+.NIKE .right .item .box .des .sold{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+}
+/* Nike */
+
+/* Adidas */
+.ADIDAS{
+    width:80% !important;
+    height: 600px;
+    /* background-color: red; */
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.ADIDAS .left{
+    width: 70%;
+    /* background-color: orange; */
+    height: 100%;
+}
+.ADIDAS .right{
+    width: 28%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.ADIDAS .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 50px;
+}
+.ADIDAS .left .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: chocolate; */
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+.ADIDAS .left .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.ADIDAS .left .item1{
+    width: 100%;
+    height: 90%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.ADIDAS .left .item1 .box{
+    width: 23%;
+    height: 48%;
+    /* background-color: cyan; */
+    border: 0.5px solid rgb(227, 222, 222) ;
+    border-radius: 30px;
+}
+.ADIDAS .left .item1 .box .pic{
+    width: 100%;
+    height: 45%;
+    /* background-color: darkorchid; */
+}
+.ADIDAS .left .item1 .box .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+.ADIDAS .left .item1 .box .des{
+    width: 100%;
+    height: 55%;
+    /* background-color: deeppink; */
+    padding-left: 10px;
+}
+.ADIDAS .left .item1 .box .des .name{
+    width: 100%;
+    height: 45%;
+    /* background-color: deepskyblue; */
+}
+.ADIDAS .left .item1 .box .des .price{
+    width: 100%;
+    height: 35%;
+    /* background-color: gold; */
+}
+.ADIDAS .left .item1 .box .des .sold{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+}
+/* Adidas */
+/* Vans */
+.VANS{
+    width:80% !important;
+    height: 600px;
+    /* background-color: green; */
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.VANS .left{
+    width: 28%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.VANS .right{
+    width: 70%;
+    /* background-color: orange; */
+    height: 100%;
+}
+.VANS .left img{
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 50px;
+}
+.VANS .right .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: chocolate; */
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+.VANS .right .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.VANS .right .item2{
+    width: 100%;
+    height: 90%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.VANS .right .item2 .box{
+    width: 23%;
+    height: 48%;
+    /* background-color: cyan; */
+    border: 0.5px solid rgb(227, 222, 222) ;
+    border-radius: 30px;
+}
+.VANS .right .item2 .box .pic{
+    width: 100%;
+    height: 45%;
+    /* background-color: darkorchid; */
+}
+.VANS .right .item2 .box .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+.VANS .right .item2 .box .des{
+    width: 100%;
+    height: 55%;
+    /* background-color: deeppink; */
+    padding-left: 10px;
+}
+.VANS .right .item2 .box .des .name{
+    width: 100%;
+    height: 45%;
+    /* background-color: deepskyblue; */
+}
+.VANS .right .item2 .box .des .price{
+    width: 100%;
+    height: 35%;
+    /* background-color: gold; */
+}
+.VANS .right .item2 .box .des .sold{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+}
+/* Vans */
+/* Converse */
+.CONVERSE{
+    width:80% !important;
+    height: 600px;
+    /* background-color: yellow; */
+    margin: 40px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.CONVERSE .right{
+    width: 28%;
+    height: 100%;
+    /* background-color: aqua; */
+}
+.CONVERSE .left{
+    width: 70%;
+    /* background-color: orange; */
+    height: 100%;
+}
+.CONVERSE .right img{
+    width: 100%;
+    height: 100%;
+    object-fit: fit;
+    border-radius: 50px;
+}
+.CONVERSE .left .title{
+    width: 100%;
+    height: 10%;
+    /* background-color: chocolate; */
+    padding-left: 10px;
+    border-bottom: 1px solid black;
+}
+.CONVERSE .left .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.CONVERSE .left .item3{
+    width: 100%;
+    height: 90%;
+    /* background-color: crimson; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.CONVERSE .left .item3 .box{
+    width: 23%;
+    height: 48%;
+    /* background-color: cyan; */
+    border: 0.5px solid rgb(227, 222, 222) ;
+    border-radius: 30px;
+}
+.CONVERSE .left .item3 .box .pic{
+    width: 100%;
+    height: 45%;
+    /* background-color: darkorchid; */
+}
+.CONVERSE .left .item3 .box .pic img{
+    width: 100%;
+    height: 100%;
+    object-fit:contain
+}
+.CONVERSE .left .item3 .box .des{
+    width: 100%;
+    height: 55%;
+    /* background-color: deeppink; */
+    padding-left: 10px;
+}
+.CONVERSE .left .item3 .box .des .name{
+    width: 100%;
+    height: 45%;
+    /* background-color: deepskyblue; */
+}
+.CONVERSE .left .item3 .box .des .price{
+    width: 100%;
+    height: 35%;
+    /* background-color: gold; */
+}
+.CONVERSE .left .item3 .box .des .sold{
+    width: 100%;
+    height: 20%;
+    /* background-color: green; */
+}
+/* Converse */
+
+/* Body */
+
+/* FOOTER */
+.Main .Footer{
+    width: 100%;
+    height: 250px;
+    background-color: black;
+    display: flex;
+}
+.Footer .Location{
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+}
+.Footer .Location .logo{
+    width: 100%;
+    height: 40%;
+    /* background-color: red; */
+    padding-left: 150px !important;
+    padding-top: 30px !important;
+}
+.Footer .Location .locate{
+    width: 100%;
+    height: 60%;
+    /* background-color: blue; */
+    /* padding-left: 180px;
+    padding-right: 100px; */
+    color: white;
+    font-family: 'roboto';
+}
+.Footer .Location .locate h3{
+    margin-left: 110px;
+    opacity: 0.5;
+}
+.Footer .Location .locate p{
+    margin-left:160px;
+    opacity: 0.5;
+    font-size: 15px;
+}
+.Footer .Abt-us{
+    width: 40%;
+    height: 100%;
+    /* background-color: green; */
+    font-family: 'roboto';
+    color: white;
+}
+.Footer .Abt-us p{
+    padding: 0px 110px;
+    text-align: justify;
+    opacity: 0.5;
+}
+.Footer .Abt-us h3{
+    margin-top: 20px;
+    margin-left: 60px;
+    opacity: 0.5;
+}
+.Footer .Con-us{
+    width: 30%;
+    height: 100%;
+    /* background-color: yellow; */
+    padding-left: 20px !important;
+}
+.Footer .Con-us .Media{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    font-family: 'roboto';
+    color: white;
+    padding-top: 20px;
+}
+.Footer .Con-us .Media h3{
+    opacity: 0.5;
+}
+.Footer .Con-us .Media ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    padding-right: 270px;
+}
+.Footer .Con-us .Media ul li a{
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+}
+.Footer .Con-us .Media ul li:hover a{
+    opacity: 1;
+}
+.Footer .Con-us .Contact{
+    width: 100%;
+    height: 50%;
+    /* background-color: red; */
+    color: white;
+    font-family: 'roboto';
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+

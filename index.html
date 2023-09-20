@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="image/logo.png">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="bower_components/aos/dist/aos.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <title>Walk</title>
+</head>
+
+<body>
+  <div class="Main">
+    <div class="Header">
+      <div class="logo col-2">
+        <img src="image/logo.png" alt="">
+      </div>
+      <div class="nav col-6">
+        <ul id="nav">
+          <li></li>
+        </ul>
+      </div>
+      <div class="Search col-3">
+        <div class="input-group">
+          <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
+          <input type="text" class="form-control" placeholder="Search">
+          <input type="button" class="btn btn-info" value="Sign Up" id="Signup">
+        </div>
+      </div>
+    </div>
+    <div class="Sign-up" id="Sign-up">
+      <div class="blur">
+      </div>
+      <div class="Sign">
+        <div class="Title w-100 position-relative">
+          <h3>Sign In</h3>
+          <i class="fa-solid fa-circle-xmark position-absolute end-0 top-0" id="Exit"></i>
+        </div>
+        <div class="mt-3">Email:</div>
+        <input type="text" class="form-control" placeholder="Enter Email">
+        <div class="mt-3">Password:</div>
+        <input type="password" class="form-control " placeholder="Enter Password">
+        <input type="button" class="btn btn-success log-in" value="Log In">
+        <h6 class="m-auto text-center mt-3">Forget Password?</h6>
+        <h6 class="m-auto text-center mt-1 text-decoration-underline">Sign Up</h6>
+
+      </div>
+    </div>
+    <div class="body">
+      <div class="courosel col-12" data-aos="fade-up" data-aos-delay="450">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="image/slide0.jpg" class="d-block w-100" alt="...">
+              <!-- <div class="carousel-caption d-none d-md-block">
+                          <h5>First slide label</h5>
+                          <p>Some representative placeholder content for the first slide.</p>
+                        </div> -->
+            </div>
+            <div class="carousel-item">
+              <img src="image/slide2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second slide label</h5>
+                <p>Some representative placeholder content for the second slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="image/slide1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="product col-12">
+        <div class="left" data-aos="fade-right" data-aos-delay="450">
+          <div class="title">
+            <p>Most Popular</p>
+            <i class="fa-solid fa-shoe-prints"></i>
+          </div>
+          <div class="brand">
+            <div class="title1">
+              <p>BRANDS :</p>
+            </div>
+            <div class="shoes">
+              <ul id="b_logo">
+                <!-- <li><a href=""><img src="image/Nike-Logo-Free-PNG-Image.png" alt=""></a></li>
+                              <li><a href=""><img src="image/adidas-logo-transparent-background-1.png" alt=""></a></li>
+                              <li><a href=""><img src="image/vans.png" alt=""></a></li>
+                              <li><a href=""><img src="image/Converse-Logo-design-on-transparent-background-PNG.png" alt=""></a></li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="Model-color">
+            <div class="model">
+              <div class="title2">
+                <p>MODELS :</p>
+              </div>
+              <div class="name">
+                <ul>
+                  <li><input type="button" value="Nike Dunk Low" id="NDL"></li>
+                  <li><input type="button" value="Nike Air Jorden1" id="NAJ"></li>
+                  <li><input type="button" value="Nike Air Force1" id="NAF"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="Shoes">
+              <div class="picture">
+                <img id="NDLI" src="image/Nike Dunk Low SE Lottery Pack Grey Fog.png" alt="">
+                <img id="AJRI"
+                  src="image/Air Jordan 1 Retro High OG BG 'Barons' - Air Jordan - 575441 104 - white_black-wolf grey.jpg"
+                  alt="">
+                <img id="NKFI" src="image/Nike Air Force 1 Low '07 White.jpg" alt="">
+              </div>
+              <div class="color">
+                <input type="button" class="btn btn-danger border-1">
+                <input type="button" class="btn btn-light border-1">
+                <input type="button" class="btn btn-dark border-1">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="right" id="right" data-aos="fade-left" data-aos-delay="450">
+          <!-- <img src="image/right1.jpg" alt=""> -->
+        </div>
+      </div>
+      <div class="NIKE">
+        <div class="left" data-aos="fade-up" data-aos-delay="350">
+          <img src="image/jordan catalogue.jpg" alt="">
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-delay="350">
+          <div class="title">
+            <h1>Nike</h1>
+          </div>
+          <div class="item" id="item">
+            <div class="col-3 box">
+              <div class="pic">
+                <!-- <img src="image/Nike/1.jpg" alt=""> -->
+              </div>
+              <div class="des">
+                <div class="name">
+
+                </div>
+                <div class="price">
+
+                </div>
+                <div class="sold">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ADIDAS">
+        <div class="left" data-aos="fade-up" data-aos-delay="350">
+          <div class="title">
+            <h1>Adidas</h1>
+          </div>
+          <div class="item1" id="item1">
+            <!-- <div class="col-3 box">
+                      <div class="pic">
+                        <img src="image/Nike/1.jpg" alt="">
+                      </div>
+                      <div class="des">
+                        <div class="name">
+                          
+                        </div>
+                        <div class="price">
+                          
+                        </div>
+                        <div class="sold">
+                          
+                        </div>
+                      </div>
+                    </div> -->
+          </div>
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-delay="350">
+          <img src="image/adidas-right.jpg" alt="">
+        </div>
+      </div>
+      <div class="VANS">
+        <div class="left" data-aos="fade-up" data-aos-delay="350">
+          <img src="image/vans-art.jpg" alt="">
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-delay="350">
+          <div class="title">
+            <h1>Vans</h1>
+          </div>
+          <div class="item2" id="item2">
+
+          </div>
+        </div>
+      </div>
+      <div class="CONVERSE">
+        <div class="left" data-aos="fade-up" data-aos-delay="350">
+          <div class="title">
+            <h1>Converse</h1>
+          </div>
+          <div class="item3" id="item3">
+
+          </div>
+        </div>
+        <div class="right" data-aos="fade-left" data-aos-delay="350">
+
+          <img src="image/converse-art.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="Footer">
+      <div class="Location">
+        <div class="logo">
+          <img src="image/logo.png" alt="">
+        </div>
+        <div class="locate">
+          <h3>Location:</h3>
+          <p>Sangkat Russey Keo <br>
+            Khan Russey Keo <br>
+            Phnom Penh</p>
+        </div>
+      </div>
+      <div class="Abt-us">
+        <h3>About Us:</h3>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, natus repellendus. Hic cupiditate rerum dolore
+          aspernatur unde veritatis pariatur porro soluta sapiente, consequatur sint iure quibusdam, eaque enim
+          distinctio recusandae!</p>
+      </div>
+      <div class="Con-us">
+        <div class="Media">
+          <h3>Social Media:</h3>
+          <ul>
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
+          </ul>
+        </div>
+        <div class="Contact">
+            <h5>Contact Information:</h5>
+            <p>WalkShop@gmail.com <br> 012 345 678</p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</body>
+<script src="bower_components/aos/dist/aos.js"></script>
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="index.js"></script>
+
+</html>
